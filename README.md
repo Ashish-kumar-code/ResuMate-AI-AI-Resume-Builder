@@ -126,8 +126,7 @@ npm run dev
 
 ## 👨‍💻 Author
 
-Prabhaker Singh  
-Full-Stack Developer  
+Abhigyan Pandey  
 
 GitHub:https://github.com/123abhigyan
 
