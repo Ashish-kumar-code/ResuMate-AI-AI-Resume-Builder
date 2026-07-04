@@ -1,13 +1,10 @@
-# ResuMate AI – AI Resume Builder
+ /* # ResuMate AI – AI Resume Builder
 
 ResuMate AI is a full-stack AI-powered resume builder that helps users create, manage, and improve professional resumes using intelligent suggestions. The platform is designed to follow modern hiring standards and generate ATS-friendly resume content through a clean and intuitive interface.
 
 ---
 
-## 🔗 Live Demo
 
-Frontend (Vercel): https://resu-mate-ai-theta.vercel.app  
-Backend (Render): https://resumate-ai-a0q8.onrender.com
 
 ⚠️ Note: The backend is hosted on Render’s free tier, so the first request may take 20–40 seconds to respond.
 
@@ -127,7 +124,5 @@ npm run dev
 ## 👨‍💻 Author
 
 Prabhaker Singh  
-Full-Stack Developer  
+Full-Stack Developer 
 
-GitHub: https://github.com/iprabhakersingh
-LinkedIn: https://linkedin.com/in/iprabhakersingh

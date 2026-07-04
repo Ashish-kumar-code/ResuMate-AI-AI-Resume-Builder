@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "test:smoke": "node tests/smokeTest.js"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,8 @@
     "openai": "^6.1.0"
   },
   "devDependencies": {
+    "autocannon": "^8.0.0",
+    "k6": "^0.0.0",
     "nodemon": "^3.1.10"
   }
 }

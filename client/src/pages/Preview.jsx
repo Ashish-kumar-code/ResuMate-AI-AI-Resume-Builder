@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Suspense, lazy } from 'react'
 import { useParams } from 'react-router-dom'
 import { dummyResumeData } from '../assets/assets'
-import ResumePreview from '../components/ResumePreview'
+const ResumePreview = lazy(() => import('../components/ResumePreview'))
 import Loader from '../components/Loader'
 import { ArrowLeftIcon } from 'lucide-react'
 import api from '../configs/api'
@@ -29,7 +29,9 @@ const Preview = () => {
   return resumeData ? (
     <div className='bg-slate-100'>
       <div className='max-w-3xl mx-auto py-10'>
-        <ResumePreview data={resumeData} template={resumeData.template} accentColor={resumeData.accent_color} classes='py-4 bg-white'/>
+        <Suspense fallback={<Loader />}>
+          <ResumePreview data={resumeData} template={resumeData.template} accentColor={resumeData.accent_color} classes='py-4 bg-white' />
+        </Suspense>
       </div>
     </div>
   ) : (
